@@ -1,5 +1,5 @@
 
-Public class Animal {
+public class Animal {
 
   protected String nome;
   protected float comprimento;
@@ -42,19 +42,19 @@ Public class Animal {
   public void setNome(String nome){
     this.nome = nome;
   }
-  public void setNome(float comprimento){
+  public void setComprimento(float comprimento){
     this.comprimento = comprimento;
   }
-  public void setNome(int nr_patas){
+  public void setNr_patas(int nr_patas){
     this.nr_patas = nr_patas;
   }
-  public void setNome(String cor){
+  public void setCor(String cor){
     this.cor = cor;
   }
-  public void setNome(String ambiente){
+  public void setAmbiente(String ambiente){
     this.ambiente = ambiente;
   }
-  public void setNome(float velocidade){
+  public void setVelocidade(float velocidade){
     this.velocidade = velocidade;
 
   }
