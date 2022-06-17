@@ -1,15 +1,30 @@
-  class Main {
+/* 1 - Crie uma hierarquia de classes para representar veículos com os atributos placa e ano:
+considere que as classes ônibus e caminhão serão filhas da classe veículo. Considerações: 
+- o construtor da classe veículo deve conter a placa e ano;
+- a classe ônibus deve conter o atributo número de assentos;
+- a classe caminhão deve conter o número de eixos e o peso máximo e carga;
+- crie os métodos gets/sets e exibir dados;
+- crie uma classe para testar as classes criadas;
+- lembre-se de usar abstract quando for o caso;
+*/
+
+class Main {
     public static void main(String[] args) {
-   
 
-    Mamifero a1 = new Mamifero("Camelo",150,4,"Amarelo","Terra",2.0);
-    Peixe a2 = new Peixe("Tubarão",300,0,"Cinzento","Mar",1.5,"Barbatanas e cauda");
-    Mamifero a3 = new Mamifero("Urso-do-canadá",180,4,"Vermelho","Terra",0.5,"Mel");
-    
-    a1.dados();
-    a2.dados();
-    a3.dados();
+      System.out.println();
+      Caminhao c1 = new Caminhao("AVS2031",2020,5,"400 toneladas","Feijão");
+      Caminhao c2 = new Caminhao("SFS3431",2000,9,"263 toneladas","Arroz");
+      Caminhao c3 = new Caminhao("AHF75341",1990,7,"100 toneladas","Macarrão");
+      Onibus o1 = new Onibus("SVS3431",2012,20);
+      Onibus o2 = new Onibus("KHG3351",2006,10);
+      Onibus o3 = new Onibus("SBV7541",1998,50);
 
+      c1.dados();
+      c2.dados();
+      c3.dados();
+      o1.dados();
+      o2.dados();
+      o3.dados();
 
 
     
