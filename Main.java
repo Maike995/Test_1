@@ -13,6 +13,15 @@ Classe de teste:
 - Para X com valor ímpar crie objetos "Conveniado" e para valor par crie objetos "NãoConveniado".
 - Para cada objeto criado, agende 2 consultas com especialidades diferentes (pediatra, cardiologista, dermatologista, pneumologista, .....).
 
+  
+Segue modelo de impressão:
+
+PACIENTE: ANA MARIA DIAS DANTAS - CONVÊNIO UNIMED 
+          DERMATOLOGISTA - 22/01/2023
+
+PACIENTE: ANA PAULA SÁ DA SILVA - SEM CONVÊNIO 
+	  CARDIOLOGISTA  - 15/03/2023 - R$ 200,00
+
 */
 
 class Main {

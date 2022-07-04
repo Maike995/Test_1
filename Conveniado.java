@@ -33,11 +33,3 @@ public class Conveniado extends Paciente{
   } 
   public void agendarConsulta(String nomeEspecialidade, int numeroConvenio, String nomeConvenio);
 }
-
-Segue modelo de impressão:
-
-PACIENTE: ANA MARIA DIAS DANTAS - CONVÊNIO UNIMED 
-          DERMATOLOGISTA - 22/01/2023
-
-PACIENTE: ANA PAULA SÁ DA SILVA - SEM CONVÊNIO 
-	  CARDIOLOGISTA  - 15/03/2023 - R$ 200,00
