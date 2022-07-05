@@ -1,33 +1,62 @@
-*/
-Crie uma classe abstrata de nome Paciente com o atributos cpf e nome e os métodos Print() e agendarConsulta(). A seguir:
-- Crie um classe derivada de Paciente de nome Conveniado (possui convênio de saúde) cujas instâncias são caracterizadas pelos atributos int númeroConvênio e String nomeConvênio.
-- Implemente na classe Conveniado o método Print() e agendarConsulta (String nomeEspecialidade, int númeroConvênio, String nomeConvênio).
-- Crie um classe derivada de Paciente de nome NãoConveniado cujas instâncias são caracterizadas pelos atributos int numCartãoCrédito e String bandeiraCartãoCrédito.
-- Implemente na classe NaoConveniado o método Print() e agendarConsulta (String nomeEspecialidade, int numCartãoCrédito e String bandeiraCartãoCrédito).
-- O método agandarConsulta() deve gerar uma data de consulta randômica válida para o ano de 2023 e retornar uma String (concatenar especialidade e data da consulta).
-- Na classe NaoConveniado, no método agendarConsulta () deve ser retornado também o valor da consulta (R$ 200,00).
 
-Classe de teste:
-
-- Elabore um programa de para criar 5 pacientes (Use o comando for. A variavel de controle deve ser chamada de X). 
-- Para X com valor ímpar crie objetos "Conveniado" e para valor par crie objetos "NãoConveniado".
-- Para cada objeto criado, agende 2 consultas com especialidades diferentes (pediatra, cardiologista, dermatologista, pneumologista, .....).
-
+import java.util.*;
   
-Segue modelo de impressão:
-
-PACIENTE: ANA MARIA DIAS DANTAS - CONVÊNIO UNIMED 
-          DERMATOLOGISTA - 22/01/2023
-
-PACIENTE: ANA PAULA SÁ DA SILVA - SEM CONVÊNIO 
-	  CARDIOLOGISTA  - 15/03/2023 - R$ 200,00
-
-*/
-
 class Main {
     public static void main(String[] args) {
 
       System.out.println();
+
+      Scanner dados = new Scanner(System.in);
+      ArrayList<Conveniado> listaC = new ArrayList<Conveniado>();
+      ArrayList<NaoConveniado> listaNC = new ArrayList<NaoConveniado>();
+      
+      for(int i ; i<5 ; i++){
+        if(i % 2 = 0){
+          
+          System.out.println("Digite o CPF do Paciente:");
+          int cpf = dados.nextInt();
+          System.out.println("Digite o Nome do Paciente:");
+          String nome = dados.next();
+          System.out.println("Digite o Numero do Cartão de Credito:");
+          int cartaoNumero = dados.nextInt();
+          System.out.println("Digite Bandeira do Cartão de crédito:");
+          String cartaoBandeira = dados.next();
+          NaoConveniado p = new NaoConveniado(cpf,nome,cartaoNumero,cartaoBandeira);
+
+
+          System.out.println("Digite a Primeira Especialidade da Consulta:");
+          String especialidade1 = dados.next();
+          System.out.println("Digite a Segunda Especialidade da Consulta:");
+          String especialidade2 = dados.next();
+          p.agendarConsulta(especialidade1,cartaoNumero,cartaoBandeira);
+          p.agendarConsulta(especialidade2,cartaoNumero,cartaoBandeira);
+          
+          listaNC.add(p);
+  
+        }else{
+          
+          System.out.println("Digite o CPF do Paciente:");
+          int cpf = dados.nextInt();
+          System.out.println("Digite o Nome do Paciente:");
+          String nome = dados.next();
+          System.out.println("Digite o Numero do Convenio:");
+          int numConvenio = dados.nextInt();
+          System.out.println("Digite o Nome do Convenio:");
+          String nomeConvenio = dados.next();
+          Conveniado p = new Conveniado(cpf,nome,numConvenio,nomeConvenio);
+
+  
+          System.out.println("Digite a Primeira Especialidade da Consulta:");
+          String especialidade1 = dados.next();
+          System.out.println("Digite a Segunda Especialidade da Consulta:");
+          String especialidade2 = dados.next();
+          p.agendarConsulta(especialidade1,numConvenio,nomeConvenio);
+          p.agendarConsulta(especialidade2,numConvenio,nomeConvenio);
+
+          listaC.add(p);
+        }
+                                                          
+      }
 
 
     
