@@ -1,4 +1,4 @@
-import java.util.*;
+
 
 public abstract class Paciente{
 
@@ -25,7 +25,7 @@ public abstract class Paciente{
   }  
 
   public abstract void print(); 
-  public abstract void agendarConsulta();
+  public abstract void agendarConsulta(String nomeEspecialidade, int numero, String tipo);
 
 }
 

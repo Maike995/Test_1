@@ -1,11 +1,11 @@
-
+import java.util.*;
   
 public class NaoConveniado extends Paciente {
 
     protected int numCartaoCredito;
     protected String bandeiraCartaoCredito;
 
-  public Conveniado(int cpf, String nome, int numCartaoCredito, String bandeiraCartaoCredito){
+  public NaoConveniado(int cpf, String nome, int numCartaoCredito, String bandeiraCartaoCredito){
     super(cpf, nome);
     this.numCartaoCredito = numCartaoCredito;
     this.bandeiraCartaoCredito = bandeiraCartaoCredito;
@@ -30,7 +30,7 @@ public class NaoConveniado extends Paciente {
     System.out.println("");
   } 
 
-  @Override
+  
   public void agendarConsulta(String nomeEspecialidade, int numCartaoCredito ,String bandeiraCartaoCredito){
     Random gerador = new Random();
 
@@ -100,7 +100,7 @@ public class NaoConveniado extends Paciente {
 
     System.out.println("PACIENTE: " + nome + " - SEM CONVÊNIO ");
     System.out.println("          " + nomeEspecialidade + " - " + data + "  - R$ 200,00" ) ;
-    
+    System.out.println();
     
   }
   

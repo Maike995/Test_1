@@ -10,8 +10,8 @@ class Main {
       ArrayList<Conveniado> listaC = new ArrayList<Conveniado>();
       ArrayList<NaoConveniado> listaNC = new ArrayList<NaoConveniado>();
       
-      for(int i ; i<5 ; i++){
-        if(i % 2 = 0){
+      for(int i = 0 ; i<5 ; i++){
+        if(i % 2 == 0){
           
           System.out.println("Digite o CPF do Paciente:");
           int cpf = dados.nextInt();

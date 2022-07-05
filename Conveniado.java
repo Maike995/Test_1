@@ -1,4 +1,4 @@
-
+import java.util.*;
   
 public class Conveniado extends Paciente{
 
@@ -31,7 +31,7 @@ public class Conveniado extends Paciente{
     System.out.println("");
   } 
 
-  @Override
+  
   public void agendarConsulta(String nomeEspecialidade, int numeroConvenio, String nomeConvenio){
     Random gerador = new Random();
 
@@ -100,13 +100,9 @@ public class Conveniado extends Paciente{
     
      System.out.println("PACIENTE: " + nome + " - CONVÊNIO " + nomeConvenio);
      System.out.println("          " + nomeEspecialidade + " - " + data) ;
-    
+     System.out.println();
   }
-
-
-
-      
-
+  
 
     
 }
