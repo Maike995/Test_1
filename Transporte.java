@@ -19,14 +19,14 @@ public abstract class Transporte{
   }
 
   public int getAnoDeFabrica(){
-    return nome;
+    return anoDeFabrica;
   }
   public void setAnoDeFabrica(int anoDeFabrica){
     this.anoDeFabrica=anoDeFabrica;
   }  
 
   public int getCapacidade(){
-    return nome;
+    return capacidade;
   }
   public void setCapacidade(int capacidade){
     this.capacidade=capacidade;
